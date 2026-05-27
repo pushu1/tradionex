@@ -1,0 +1,97 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id            String         @id @default(uuid())
+  name          String         @unique
+  slug          String         @unique
+  subCategories SubCategory[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+}
+
+model SubCategory {
+  id          String   @id @default(uuid())
+  name        String
+  slug        String   @unique
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([categoryId])
+}
+
+model BlogPost {
+  id          String   @id @default(uuid())
+  title       String
+  slug        String   @unique
+  content     String
+  imageUrl    String?
+  published   Boolean  @default(false)
+  author      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Inquiry {
+  id          String   @id @default(uuid())
+  name        String
+  email       String
+  phone       String?
+  company     String?
+  message     String
+  status      String   @default("NEW") // NEW, IN_PROGRESS, RESOLVED
+  createdAt   DateTime @default(now())
+}
+
+model JobApplicant {
+  id          String   @id @default(uuid())
+  firstName   String
+  lastName    String
+  email       String
+  phone       String
+  position    String
+  resumeUrl   String   // URL to the uploaded resume file
+  coverLetter String?
+  status      String   @default("PENDING") // PENDING, REVIEWED, REJECTED, HIRED
+  createdAt   DateTime @default(now())
+}
+
+model GalleryImage {
+  id          String   @id @default(uuid())
+  title       String?
+  imageUrl    String
+  category    String?  // e.g., 'Minerals', 'Spices', 'Events'
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Job {
+  id          String   @id @default(uuid())
+  title       String
+  department  String
+  location    String
+  type        String   // Full-Time, Part-Time, Contract
+  status      String   @default("OPEN") // OPEN, CLOSED
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AdminUser {
+  id          String   @id @default(uuid())
+  username    String   @unique
+  password    String   // Hashed password
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
