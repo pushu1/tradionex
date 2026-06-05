@@ -5,10 +5,9 @@ import { prisma } from "@/lib/prisma";
 export const dynamic = 'force-dynamic';
 
 export default async function BlogPage() {
-  const posts = await prisma.blogPost.findMany({
-    where: { published: true },
-    orderBy: { createdAt: "desc" }
-  });
+const posts = await prisma.blogPost.findMany({
+  orderBy: { createdAt: "desc" }
+});
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950 py-24 transition-colors">
@@ -29,7 +28,7 @@ export default async function BlogPage() {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map(post => (
+            {posts.map((post: any) => (
               <article key={post.id} className="group cursor-pointer">
                 <div className="aspect-[4/3] bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 overflow-hidden relative">
                   {post.imageUrl ? (

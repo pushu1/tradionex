@@ -83,16 +83,20 @@ export default async function MineralPage({ params }: { params: Promise<{ slug: 
           <div className="lg:col-span-4">
             <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 sticky top-8">
 <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-  {mineral.slug === "quartz"
-    ? "Chemical Analysis Report"
-    : mineral.slug === "natural-garnet"
-    ? "TYPICAL CHEMICAL COMPOSITION"
-    : "Quality Index"}
+ {mineral.slug === "quartz"
+  ? "Chemical Analysis Report"
+  : mineral.slug === "natural-garnet"
+  ? "TYPICAL CHEMICAL COMPOSITION"
+  : mineral.slug === "feldspar"
+  ? "Sodium Feldspar Test Report"
+  : mineral.slug === "bentonite"
+  ? "API Test Reports"
+  : "Quality Index"}
 </h3>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-6 pb-4 border-b border-gray-100 dark:border-gray-800">Verified Technical Specifications</p>
-              
+              {mineral.slug !== "bentonite" && (
               <ul className="space-y-4 mb-8">
-                {mineral.qualityIndex.map((spec, idx) => (
+                {mineral.qualityIndex?.map((spec, idx) => (
                   <li key={idx} className="flex flex-col">
                     <span className="text-gray-500 dark:text-gray-400 text-sm mb-1">{spec.label}</span>
                     <span className="font-semibold text-gray-900 dark:text-gray-100 flex items-center">
@@ -102,6 +106,123 @@ export default async function MineralPage({ params }: { params: Promise<{ slug: 
                   </li>
                 ))}
               </ul>
+              )}
+
+
+              {mineral.slug === "feldspar" && (
+  <>
+
+<h4 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+  Chemical Analysis
+</h4>
+
+<ul className="space-y-4 mb-6">
+  {(mineral as any).sodiumReport?.map((spec: any, idx: number) => (
+    <li key={idx} className="flex flex-col">
+      <span className="text-gray-500 dark:text-gray-400 text-sm mb-1">
+        {spec.label}
+      </span>
+
+      <span className="font-semibold text-gray-900 dark:text-gray-100 flex items-center">
+        <Check className="w-4 h-4 text-green-500 mr-2" />
+        {spec.value}
+      </span>
+    </li>
+  ))}
+</ul>
+
+<h5 className="font-semibold text-gray-900 dark:text-gray-100 mt-6 mb-3">
+  Physical Properties
+</h5>
+
+<ul className="space-y-4 mb-6">
+  {(mineral as any).sodiumPhysical?.map((spec: any, idx: number) => (
+    <li key={idx} className="flex flex-col">
+      <span className="text-gray-500 dark:text-gray-400 text-sm mb-1">
+        {spec.label}
+      </span>
+
+      <span className="font-semibold text-gray-900 dark:text-gray-100 flex items-center">
+        <Check className="w-4 h-4 text-green-500 mr-2" />
+        {spec.value}
+      </span>
+    </li>
+  ))}
+</ul>
+
+    <hr className="my-6" />
+
+    <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      Potassium Feldspar Test Report
+    </h4>
+
+    <ul className="space-y-4 mb-6">
+      {(mineral as any).potassiumReport?.map((spec: any, idx: number) => (
+        <li key={idx} className="flex flex-col">
+          <span className="text-gray-500 dark:text-gray-400 text-sm mb-1">
+            {spec.label}
+          </span>
+
+          <span className="font-semibold text-gray-900 dark:text-gray-100 flex items-center">
+            <Check className="w-4 h-4 text-green-500 mr-2" />
+            {spec.value}
+          </span>
+        </li>
+      ))}
+    </ul>
+
+    <h5 className="font-semibold text-gray-900 dark:text-gray-100 mt-6 mb-3">
+  Physical Properties
+</h5>
+
+<ul className="space-y-4 mb-6">
+  {(mineral as any).potassiumPhysical?.map((spec: any, idx: number) => (
+    <li key={idx} className="flex flex-col">
+      <span className="text-gray-500 dark:text-gray-400 text-sm mb-1">
+        {spec.label}
+      </span>
+
+      <span className="font-semibold text-gray-900 dark:text-gray-100 flex items-center">
+        <Check className="w-4 h-4 text-green-500 mr-2" />
+        {spec.value}
+      </span>
+    </li>
+  ))}
+</ul>
+  </>
+)}
+
+{mineral.slug === "bentonite" && (
+  <>
+    <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      API 13 A Section 9
+    </h4>
+
+    <ul className="space-y-3 mb-6">
+      {(mineral as any).api13Section9?.map((spec: any, idx: number) => (
+        <li key={idx} className="flex flex-col">
+          <span className="text-gray-500 text-sm">{spec.property}</span>
+          <span className="font-semibold">{spec.specification}</span>
+        </li>
+      ))}
+    </ul>
+
+    <hr className="my-6" />
+
+    <h4 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-4">
+      API 13 A Section 11 (OCMA)
+    </h4>
+
+    <ul className="space-y-3 mb-6">
+      {(mineral as any).api13Section11?.map((spec: any, idx: number) => (
+        <li key={idx} className="flex flex-col">
+          <span className="text-gray-500 text-sm">{spec.property}</span>
+          <span className="font-semibold">{spec.specification}</span>
+        </li>
+      ))}
+    </ul>
+  </>
+)}
               
               <div className="bg-gray-900 dark:bg-black p-6 rounded-xl border border-gray-800 dark:border-gray-800 text-center shadow-inner">
                 <p className="text-sm text-gray-300 mb-4 font-medium"> If you need any other grade/usage please contact us, So we will share the specs and pricing quick accordingly.</p>

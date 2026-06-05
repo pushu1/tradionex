@@ -7,9 +7,14 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative py-24 md:py-32 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-gray-100 tracking-tight mb-6">
-            Global Excellence in <br />
-            <span className="text-blue-600">Industrial Export</span>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+            <span className="text-black">
+              Global Excellence in
+            </span>
+            <br />
+            <span className="text-[#241c66]">
+              Industrial Export
+            </span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
             Star Enterprises is a trustworthy name in the market of Export Industry managed under the expertise of xx. Our Experience in export industry is more than 10+ Years with our sister concern firm xx, Started from Natural stones and expanded our business in multi products. We are indulged in manufacturing, exporting, and supplying the best quality of Industrial Minerals, Natural Stones, Indian Spices, Rice(Basmati & Non-Basmati).
@@ -24,7 +29,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 tracking-tight">Certifications & Quality Policy</h2>
+              <h2 className="text-3xl font-bold text-[#241c66] mb-6 tracking-tight">Certifications & Quality Policy</h2>
               <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-lg font-light">
                 Quality is not an act, it is our habit. At Tradionex, we adhere to stringent international standards
                 across all our product lines. From mining raw industrial minerals to processing agricultural goods,
@@ -39,7 +44,7 @@ export default function AboutPage() {
                   "Global Phytosanitary Compliance for Agricultural Exports"
                 ].map((policy, idx) => (
                   <div key={idx} className="flex items-start">
-                    <CheckCircle2 className="w-6 h-6 text-blue-600 mr-4 flex-shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-[#241c66] mr-4 flex-shrink-0" />
                     <span className="text-gray-800 dark:text-gray-200 font-medium">{policy}</span>
                   </div>
                 ))}

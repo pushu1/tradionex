@@ -6,13 +6,17 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300 py-16 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          
+
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="text-2xl font-bold text-white tracking-tight mb-4 inline-block">
-              Tradionex<span className="text-blue-500">.</span>
+            <Link href="/" className="inline-block mb-2">
+              <img
+                src="/Tradinax2.png"
+                alt="Tradionex"
+                className="w-50 h-auto"
+              />
             </Link>
-            <p className="text-sm text-gray-400 leading-relaxed mb-6">
+            <p className="text-sm text-gray-400 leading-relaxed mb-6 hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">
               Global excellence in industrial minerals and agricultural export. We deliver purity and scale to the world's most demanding industries.
             </p>
           </div>
@@ -21,10 +25,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
-              <li><Link href="/career" className="hover:text-blue-400 transition-colors">Careers</Link></li>
-              <li><Link href="/gallery" className="hover:text-blue-400 transition-colors">Gallery</Link></li>
-              <li><Link href="/blog" className="hover:text-blue-400 transition-colors">Insights & News</Link></li>
+              <li><Link href="/about" className="hover:text-[#fa7719] transition-colors duration-300">About Us</Link></li>
+              <li><Link href="/career" className="hover:text-[#fa7719] transition-colors duration-300">Careers</Link></li>
+              <li><Link href="/gallery" className="hover:text-[#fa7719] transition-colors duration-300">Gallery</Link></li>
+              <li><Link href="/blog" className="hover:text-[#fa7719] transition-colors duration-300">Insights & News</Link></li>
             </ul>
           </div>
 
@@ -32,10 +36,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Export Catalogue</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/minerals/kaolin" className="hover:text-blue-400 transition-colors">Industrial Minerals</Link></li>
-              <li><Link href="/products/natural-stone" className="hover:text-blue-400 transition-colors">Natural Stones</Link></li>
-              <li><Link href="/products/basmati-rice" className="hover:text-blue-400 transition-colors">Agricultural Products</Link></li>
-              <li><Link href="/application" className="hover:text-blue-400 transition-colors">Industry Applications</Link></li>
+              <li><Link href="/minerals/kaolin" className="hover:text-[#fa7719] transition-colors duration-300">Industrial Minerals</Link></li>
+              <li><Link href="/products/natural-stone" className="hover:text-[#fa7719] transition-colors duration-300">Natural Stones</Link></li>
+              <li><Link href="/products/basmati-rice" className="hover:text-[#fa7719] transition-colors duration-300">Agricultural Products</Link></li>
+              <li><Link href="/application" className="hover:text-[#fa7719] transition-colors duration-300">Industry Applications</Link></li>
             </ul>
           </div>
 
@@ -45,15 +49,15 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-blue-500 flex-shrink-0" />
-                <span>Dubai Silicon Oasis, <br/> Dubai, United Arab Emirates</span>
+                <span className="hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">Dubai Silicon Oasis, <br /> Dubai, United Arab Emirates</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-blue-500 flex-shrink-0" />
-                <span>+971 50 123 4567</span>
+                <span className="hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">+971 50 123 4567</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-blue-500 flex-shrink-0" />
-                <span>export@tradionex.com</span>
+                <span className="hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">export@tradionex.com</span>
               </li>
             </ul>
           </div>
