@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
@@ -12,6 +12,9 @@ export default function Navbar() {
   const isHome = pathname === "/";
 
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showMinerals, setShowMinerals] = useState(false);
+  const [showProducts, setShowProducts] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -24,10 +27,10 @@ export default function Navbar() {
   const navClass =
     "fixed top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm";
   const textClass =
-  "text-black hover:text-[#fa7719] font-semibold tracking-wide";
+    "text-black hover:text-[#fa7719] font-semibold tracking-wide";
   const logoClass = "text-white";
   const chevronClass =
-  "text-gray-500 group-hover:text-[#fa7719]";
+    "text-gray-500 group-hover:text-[#fa7719]";
 
   return (
     <header className={navClass}>
@@ -47,7 +50,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 h-full">
+          <nav className="hidden lg:flex space-x-8 h-full">
             <Link href="/" className={`inline-flex items-center text-[15px] font-semibold tracking-wide transition-colors ${textClass}`}>
               Home
             </Link>
@@ -107,7 +110,7 @@ export default function Navbar() {
           </nav>
 
           {/* Contact CTA & Theme Toggle */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <ThemeToggle isTransparent={isTransparent} />
             <Link
               href="/contact"
@@ -117,7 +120,110 @@ export default function Navbar() {
             </Link>
           </div>
 
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden flex items-center relative z-[999999]">
+            <button
+              className="relative z-[999999] text-[#241c66]"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? (
+                <X className="w-8 h-8" />
+              ) : (
+                <Menu className="w-8 h-8" />
+              )}
+            </button>
+          </div>
+
+
         </div>
+
+
+        {mobileMenuOpen && (
+          <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+            <div className="flex flex-col py-4">
+
+              <Link
+                href="/"
+                className="px-6 py-3 text-[#241c66] hover:text-[#fa7719] font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+
+              <Link
+                href="/about"
+                className="px-6 py-3 text-[#241c66] hover:text-[#fa7719] font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About Us
+              </Link>
+
+              <button
+                onClick={() => setShowMinerals(!showMinerals)}
+                className="px-6 py-3 text-left text-[#241c66] font-medium"
+              >
+                Industrial Minerals
+              </button>
+
+              {showMinerals && (
+                <div className="pl-10 flex flex-col gap-2 pb-2">
+                  <Link href="/minerals/china-clay">China Clay</Link>
+                  <Link href="/minerals/natural-garnet">Natural Garnet</Link>
+                  <Link href="/minerals/quartz">Quartz</Link>
+                  <Link href="/minerals/feldspar">Feldspar</Link>
+                  <Link href="/minerals/bentonite">Bentonite</Link>
+                  <Link href="/minerals/talc">Talc</Link>
+                  <Link href="/minerals/mica">Mica</Link>
+                </div>
+              )}
+
+
+              <button
+                onClick={() => setShowProducts(!showProducts)}
+                className="px-6 py-3 text-left text-[#241c66] font-medium"
+              >
+                Products
+              </button>
+
+              {showProducts && (
+                <div className="pl-10 flex flex-col gap-2 pb-2">
+                  <Link href="/products/natural-stone">Natural Stone</Link>
+                  <Link href="/products/indian-spices">Indian Spices</Link>
+                  <Link href="/products/basmati-rice">Basmati Rice</Link>
+                  <Link href="/products/non-basmati-rice">Non-Basmati Rice</Link>
+                </div>
+              )}
+
+              <Link
+                href="/application"
+                className="px-6 py-3 text-[#241c66] hover:text-[#fa7719] font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Application
+              </Link>
+
+              <Link
+                href="/blog"
+                className="px-6 py-3 text-[#241c66] hover:text-[#fa7719] font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
+
+              <Link
+                href="/contact"
+                className="mx-6 mt-4 text-center py-3 rounded-full bg-[#241c66] text-white hover:bg-[#fa7719] transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact Us
+              </Link>
+
+            </div>
+          </div>
+        )}
+
+
+
       </div>
     </header>
   );
