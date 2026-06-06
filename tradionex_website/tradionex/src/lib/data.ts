@@ -3,7 +3,7 @@ export const mineralsData = [
     name: "China Clay",
     slug: "china-clay",
     tagline: "High-purity raw material essential for premium ceramics and paper manufacturing.",
-    description: "Star Enterprises offer their customers a wide range of quality products. We offer China Clay(Kaolin). We use high grade raw china clay which ensures that the final product will be of high quality. We process our china clay according to our customer requirement which is able to meet our customer requirement.",
+    description: "Tradionex offer their customers a wide range of quality products. We offer China Clay(Kaolin). We use high grade raw china clay which ensures that the final product will be of high quality. We process our china clay according to our customer requirement which is able to meet our customer requirement.",
     imageUrl: "/ChinaClay.jpg",
     applications: ["Ceramics", "Rubber", "Fiber Glass", "Paper", "Paint", "Pesticides", "Detergent"],
     qualityIndex: [
@@ -39,7 +39,7 @@ export const mineralsData = [
     name: "Quartz",
     slug: "quartz",
     tagline: "Exceptional thermal resistance for semiconductor and optical glass industries.",
-    description: "Star Enterprises offer their customers a wide range of products. We offer Quartz Silica Sand which is mainly used for the Glassmaking industry. As we are able to process grades according to our customer requirement.",
+    description: "Tradionex offer their customers a wide range of products. We offer Quartz Silica Sand which is mainly used for the Glassmaking industry. As we are able to process grades according to our customer requirement.",
     imageUrl: "/Quartz.jpg",
     applications: ["1. Quartz slab manufacturing", "2. Mainly for Glassmaking"],
     sidebarTitle: "Chemical Analysis Report",
@@ -60,7 +60,7 @@ export const mineralsData = [
     name: "Feldspar",
     slug: "feldspar",
     tagline: "Crucial fluxing agent for glassmaking and high-end porcelain production.",
-    description: "Star Enterprises offer their customers a wide range of quality products. We offer Feldspar according to our customer manufacturing requirements. We ensure that the raw material used is of high grade which ensures that the final product will be of high quality.",
+    description: "Tradionex offer their customers a wide range of quality products. We offer Feldspar according to our customer manufacturing requirements. We ensure that the raw material used is of high grade which ensures that the final product will be of high quality.",
     imageUrl: "/Feldspar.jpg",
     applications: ["1. Ceramics (Floor tiles, Tableware, Etc)", "2. Glass Making (Beverage bottles, glass for protection, fiberglass for insulation)", "3. Paint"],
 
@@ -100,7 +100,7 @@ export const mineralsData = [
     name: "Bentonite",
     slug: "bentonite",
     tagline: "Premium absorption properties for pharmaceuticals, cosmetics, and drilling.",
-    description: "Star Enterprises offer their customers a wide range of quality products. Bentonite is used as libricator / thickener for drilling fluids. Drilling mud is crucial in the extraction of drill cutting during the drilling process. Bentonite, when mixed with water, forms a fluid (or slurry) which is pumped through the drill stem and out through the drill bit. The drilling mud or get also serves to cool and lubricate the drill bit as well as seal the drill hole against seepage and to prevent wall cave-ins. Our Drilling grade bentonite powder service a variety of function lubricating drill bits, stabilizing well bores removing rock cutting and improving drilling efficiency. Drilling mud or drilling gel is a major component in the well drilling process.",
+    description: "Tradionex offer their customers a wide range of quality products. Bentonite is used as libricator / thickener for drilling fluids. Drilling mud is crucial in the extraction of drill cutting during the drilling process. Bentonite, when mixed with water, forms a fluid (or slurry) which is pumped through the drill stem and out through the drill bit. The drilling mud or get also serves to cool and lubricate the drill bit as well as seal the drill hole against seepage and to prevent wall cave-ins. Our Drilling grade bentonite powder service a variety of function lubricating drill bits, stabilizing well bores removing rock cutting and improving drilling efficiency. Drilling mud or drilling gel is a major component in the well drilling process.",
     imageUrl: "/Bentonite.jpg",
     applications: ["Oil & Gas Drilling", "Foundry Sand", "Iron Ore Pelletizing", "Civil Engineering"],
 
@@ -159,7 +159,7 @@ export const mineralsData = [
     name: "Talc",
     slug: "talc",
     tagline: "Ultra-soft hydrous magnesium silicate for diverse industrial uses.",
-    description: "Star Enterprises offer their customers a wide range of quality products. We offer finest quality and long lasting talc Powder from Rajasthan, India. Our pure talc powder is comprehensively in deman due to its softness and slippery characterstics. It is prepared by adroit professionals available with us under the stringent supervision of experts. Our Talc Powder is highly efficient, requires less maintenance and ensures superb performance.",
+    description: "Tradionex offer their customers a wide range of quality products. We offer finest quality and long lasting talc Powder from Rajasthan, India. Our pure talc powder is comprehensively in deman due to its softness and slippery characterstics. It is prepared by adroit professionals available with us under the stringent supervision of experts. Our Talc Powder is highly efficient, requires less maintenance and ensures superb performance.",
     imageUrl: "/Talc.jpg",
     applications: ["Plastics & Polymers", "Paper Manufacturing", "Cosmetics", "Paints"],
     qualityIndex: [
@@ -174,7 +174,7 @@ export const mineralsData = [
     name: "Mica",
     slug: "mica",
     tagline: "Superior electrical insulation and thermal resistance properties.",
-    description: "Star Enterprises offer their customers a wide range of quality products. We are Indulged in Exporting of Mica from India. We supply Mica Scrap, Powder, Flakes, Block. Which is used in many industry. You have Quality & Price advantages with our company.",
+    description: "Tradionex offer their customers a wide range of quality products. We are Indulged in Exporting of Mica from India. We supply Mica Scrap, Powder, Flakes, Block. Which is used in many industry. You have Quality & Price advantages with our company.",
     imageUrl: "/Mica.jpg",
     applications: ["Electronics Insulation", "Aerospace", "Pearlescent Pigments", "Welding Electrodes"],
     qualityIndex: [
@@ -474,7 +474,7 @@ export const subProducts = [
     tagline: "Premium Indian Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. Kandla Grey is a kind of sandstone in which the quartz grains are cemented together by secondary silica calcite. The presence of minor color tonal variations make it a unique and attractive building stone.",
+      "Tradionex offers their customer a wide range of quality products. Kandla Grey is a kind of sandstone in which the quartz grains are cemented together by secondary silica calcite. The presence of minor color tonal variations make it a unique and attractive building stone.",
     Edges: "Both hand chiseled and machine cut (sawn)",
     applications: [
       "28 x 28",
@@ -509,7 +509,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. This stone is complete replica for concrete tiles having consistency in the colour which becomes more predominant in rainy season. The compactness in the structure of this stone gives good strength and better surfaces.",
+      "Tradionex offers their customer a wide range of quality products. This stone is complete replica for concrete tiles having consistency in the colour which becomes more predominant in rainy season. The compactness in the structure of this stone gives good strength and better surfaces.",
     Edges: "Both hand chiseled and machine cut (sawn)",
     applications: [
       "28 x 28",
@@ -543,7 +543,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. Lalitpur Yellow is especially useful for exterior cladding in sea shore buildings due to acid & thermal resistant properties. As such the effect of saline winds is negligible on Lalitpur sandstone. The golden yellow hue of this sandstone demands for it's wide installation.",
+      "Tradionex offers their customer a wide range of quality products. Lalitpur Yellow is especially useful for exterior cladding in sea shore buildings due to acid & thermal resistant properties. As such the effect of saline winds is negligible on Lalitpur sandstone. The golden yellow hue of this sandstone demands for it's wide installation.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -578,7 +578,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. This stone has more of buff colour with oxidation lines all over with a mix base of light pink and yellowish brown. The lines are more visible once the stone gets wet which shows a ripping pattern on the surface.",
+      "Tradionex offers their customer a wide range of quality products. This stone has more of buff colour with oxidation lines all over with a mix base of light pink and yellowish brown. The lines are more visible once the stone gets wet which shows a ripping pattern on the surface.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -613,7 +613,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. Mint White Sandstone are sedimentary rocks made from small grains of the minerals quartz and feldspar. These layers are pressed down more and more through time, until the bottom layers slowly turn into rock.",
+      "Tradionex offers their customer a wide range of quality products. Mint White Sandstone are sedimentary rocks made from small grains of the minerals quartz and feldspar. These layers are pressed down more and more through time, until the bottom layers slowly turn into rock.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -648,7 +648,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. The vibrant green surface colour makes this stone useful for outside landscaping as it matches up with the colour of grass and soil thus making a package combination paving.",
+      "Tradionex offers their customer a wide range of quality products. The vibrant green surface colour makes this stone useful for outside landscaping as it matches up with the colour of grass and soil thus making a package combination paving.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -683,7 +683,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. Kota Blue limestone has base colour blue with very less tonal variation and suits well for outdoor usage due to less wear and tear being steady and strong in composition.",
+      "Tradionex offers their customer a wide range of quality products. Kota Blue limestone has base colour blue with very less tonal variation and suits well for outdoor usage due to less wear and tear being steady and strong in composition.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -718,7 +718,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. This limestone has the base colour green goes well for gardening purpose as it duely matches with the colour of the grass..",
+      "Tradionex offers their customer a wide range of quality products. This limestone has the base colour green goes well for gardening purpose as it duely matches with the colour of the grass..",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -753,7 +753,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. Kota Black is a dolomitic limestone that has been proven to be durable in any climate. It has a typical limestone texture that is generally smooth with occasional raven patches. Unique for a limestone, it has a relatively consistent dark grey to black colour.",
+      "Tradionex offers their customer a wide range of quality products. Kota Black is a dolomitic limestone that has been proven to be durable in any climate. It has a typical limestone texture that is generally smooth with occasional raven patches. Unique for a limestone, it has a relatively consistent dark grey to black colour.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -788,7 +788,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Apple green granite to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Apple green granite to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -823,7 +823,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Crystal Yellow granite to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Crystal Yellow granite to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -858,7 +858,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Rosy Pink granite to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Rosy Pink granite to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -893,7 +893,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Imperial Pink granite to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Imperial Pink granite to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -928,7 +928,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Alaska White granite to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Alaska White granite to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -963,7 +963,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Pearl White granite to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Pearl White granite to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -998,7 +998,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Green Marble to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Green Marble to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -1033,7 +1033,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Rajnagar Arna Marble to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Rajnagar Arna Marble to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -1068,7 +1068,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Katni Brown Marble to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Katni Brown Marble to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [
@@ -1103,7 +1103,7 @@ export const subProducts = [
     tagline: "Premium Sandstone",
 
     description:
-      "Star Enterprises offers their customer a wide range of quality products. We offer Pista White Marble to our customers at best affordable prices.",
+      "Tradionex offers their customer a wide range of quality products. We offer Pista White Marble to our customers at best affordable prices.",
     Edges: "Both hand chiseled and machine cut (sawn)",
 
     applications: [

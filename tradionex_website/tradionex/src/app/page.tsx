@@ -4,10 +4,10 @@ import { ArrowRight, Globe2, ShieldCheck, Factory, CheckCircle2 } from "lucide-r
 
 export default function HomePage() {
   const mineralGlimpses = [
-    { name: "China Clay (Kaolin)", slug: "china-clay", image: "/ChinaClay.jpg", desc: "Star Enterprises offer their customers a wide range of quality products. We offer China Clay(Kaolin)." },
-    { name: "Quartz", slug: "quartz", image: "/Quartz.jpg", desc: "Star Enterprises offer their customers a wide range of products. We offer Quartz Silica Sand which is mainly used for the Glassmaking industry." },
-    { name: "Bentonite", slug: "bentonite", image: "/Bentonite.jpg", desc: "Star Enterprises offer their customers a wide range of quality products. Bentonite is used as libricator / thickener for drilling fluids." },
-    { name: "Feldspar", slug: "feldspar", image: "/Feldspar.jpg", desc: "Star Enterprises offer their customers a wide range of quality products. We offer Feldspar according to our customer manufacturing requirements." },
+    { name: "China Clay (Kaolin)", slug: "china-clay", image: "/ChinaClay.jpg", desc: "Tradionex offer their customers a wide range of quality products. We offer China Clay(Kaolin)." },
+    { name: "Quartz", slug: "quartz", image: "/Quartz.jpg", desc: "Tradionex offer their customers a wide range of products. We offer Quartz Silica Sand which is mainly used for the Glassmaking industry." },
+    { name: "Bentonite", slug: "bentonite", image: "/Bentonite.jpg", desc: "Tradionex offer their customers a wide range of quality products. Bentonite is used as libricator / thickener for drilling fluids." },
+    { name: "Feldspar", slug: "feldspar", image: "/Feldspar.jpg", desc: "Tradionex offer their customers a wide range of quality products. We offer Feldspar according to our customer manufacturing requirements." },
   ];
 
   const productGlimpses = [
