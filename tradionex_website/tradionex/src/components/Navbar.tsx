@@ -59,6 +59,13 @@ export default function Navbar() {
               About Us
             </Link>
 
+            <Link
+              href="/garnet"
+              className={`inline-flex items-center text-[15px] font-semibold tracking-wide transition-colors ${textClass}`}
+            >
+              Garnet
+            </Link>
+
             {/* Industrial Minerals Dropdown */}
             <div className="relative group flex items-center h-full">
               <button className={`inline-flex items-center text-[15px] font-semibold tracking-wide transition-colors focus:outline-none ${textClass}`}>
@@ -68,7 +75,7 @@ export default function Navbar() {
 
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-64 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out border border-gray-100 py-3">
                 <div className="flex flex-col">
-                  {['China Clay', 'Natural Garnet', 'Quartz', 'Feldspar', 'Bentonite', 'Talc', 'Mica'].map((mineral) => (
+                  {['China Clay', 'Quartz', 'Feldspar', 'Bentonite', 'Talc', 'Mica'].map((mineral) => (
                     <Link
                       key={mineral}
                       href={`/minerals/${mineral.toLowerCase().replace(' ', '-')}`}
@@ -158,6 +165,15 @@ export default function Navbar() {
                 About Us
               </Link>
 
+
+              <Link
+                href="/garnet"
+                className="px-6 py-3 text-[#241c66] hover:text-[#fa7719] font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Garnet
+              </Link>
+
               <button
                 onClick={() => setShowMinerals(!showMinerals)}
                 className="px-6 py-3 text-left text-[#241c66] font-medium"
@@ -168,7 +184,6 @@ export default function Navbar() {
               {showMinerals && (
                 <div className="pl-10 flex flex-col gap-2 pb-2">
                   <Link href="/minerals/china-clay">China Clay</Link>
-                  <Link href="/minerals/natural-garnet">Natural Garnet</Link>
                   <Link href="/minerals/quartz">Quartz</Link>
                   <Link href="/minerals/feldspar">Feldspar</Link>
                   <Link href="/minerals/bentonite">Bentonite</Link>
