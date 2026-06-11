@@ -24,7 +24,7 @@ export default function HomePage() {
         {/* Full Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/LargeCardamom.jpg"
+            src="/garnetabbresive2.png"
             alt="Background"
             className="w-full h-full object-cover opacity-60"
           />
@@ -32,11 +32,11 @@ export default function HomePage() {
         </div>
 
         {/* Giant Background Typography */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none select-none">
+        {/* <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none select-none">
           <h1 className="text-[12vw] font-bold text-[#E5D3C1] opacity-60 tracking-tighter mix-blend-overlay mt-[-10vh]">
             TRADIONEX
           </h1>
-        </div>
+        </div> */}
 
         {/* Content Overlay */}
         <div className="relative z-20 w-full pl-4 sm:pl-6 lg:pl-16 flex flex-col md:flex-row items-end justify-between gap-12">
@@ -56,43 +56,43 @@ export default function HomePage() {
 
             {/* Card 1 */}
 
-            <Link href="/products/natural-stone" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
-              <img src="/NaturalStones.jpg" alt="Natural Stone" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <Link href="/minerals/natural-garnet" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
+              <img src="/NaturalGarnet.jpg" alt="Natural Garnet" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6">
-                <h3 className="text-white font-bold text-2xl mb-1">Natural Stone</h3>
+                <h3 className="text-white font-bold text-2xl mb-1">Natural Garnet</h3>
                 {/* <p className="text-gray-300 text-sm">Architectural Export</p> */}
               </div>
             </Link>
 
             {/* Card 2 */}
 
-            <Link href="/products/indian-spices" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
-              <img src="/Spices.jpg" alt="Spices" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <Link href="/minerals/china-clay" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
+              <img src="/ChinaClay.jpg" alt="China Clay" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6">
-                <h3 className="text-white font-bold text-2xl mb-1">Spices</h3>
+                <h3 className="text-white font-bold text-2xl mb-1">China Clay</h3>
                 {/* <p className="text-gray-300 text-sm">High Purity Minerals</p> */}
               </div>
             </Link>
 
 
             {/* Card 3 */}
-            <Link href="/products/basmati-rice" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
-              <img src="/BasmatiRice.jpg" alt="Basmati Rice" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <Link href="/minerals/bentonite" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
+              <img src="/Bentonite.jpg" alt="Bentonite" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6">
-                <h3 className="text-white font-bold text-2xl mb-1">Basmati Rice</h3>
+                <h3 className="text-white font-bold text-2xl mb-1">Bentonite</h3>
                 {/* <p className="text-gray-300 text-sm">Premium Agriculture</p> */}
               </div>
             </Link>
 
             {/* Card 4 */}
-            <Link href="/products/non-basmati-rice" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
-              <img src="/NonBasmatiRice.jpg" alt="Non-Basmati Rice" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            <Link href="/minerals/quartz" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
+              <img src="/Quartz.jpg" alt="Quartz" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6">
-                <h3 className="text-white font-bold text-2xl mb-1">Non-Basmati Rice</h3>
+                <h3 className="text-white font-bold text-2xl mb-1">Quartz</h3>
                 {/* <p className="text-gray-300 text-sm">Industrial Minerals</p> */}
               </div>
             </Link>

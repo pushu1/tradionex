@@ -17,8 +17,7 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
-            Tradionex is a trustworthy name in the market of Export Industry managed under the expertise of xx. Our Experience in export industry is more than 10+ Years with our sister concern firm xx, Started from Natural stones and expanded our business in multi products. We are indulged in manufacturing, exporting, and supplying the best quality of Industrial Minerals, Natural Stones, Indian Spices, Rice(Basmati & Non-Basmati).
-            The agro products that we offer are grown without the use of harmful chemicals. These agro products are widely known for their freshness and high nutritional content. Our expertise in offering Natural stone, Industrial mineral, and Garnet Stone has made us more popular in the industry
+            Tradionex is a UAE-based exporter of Garnet Abrasives and Industrial Minerals, supplying consistent grade materials for sandblasting, waterjet cutting, and surface preparation & other industries worldwide. With over 10+ years of experience in mineral sourcing, processing, and export, we focus on delivering stable quality, reliable supply, and industrial-grade specifications for global buyers. Our core strength lies in garnet abrasives (20/40, 30/60, 80 mesh) & Industrial Minerals supplied to clients across the Middle East, Asia, and other international markets. We operate through a controlled supply chain between India and UAE, ensuring quality inspection, bulk availability, and efficient export logistics. In addition to industrial minerals, we also deal in rice, natural stones, and spices through our Indian firms Star Enterprises and JB Enterprises.
           </p>
         </div>
       </section>
