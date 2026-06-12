@@ -57,7 +57,7 @@ export default function HomePage() {
             {/* Card 1 */}
 
             <Link href="/minerals/natural-garnet" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
-              <img src="/NaturalGarnet.jpg" alt="Natural Garnet" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <img src="/Garnet.jpg" alt="Natural Garnet" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6">
                 <h3 className="text-white font-bold text-2xl mb-1">Natural Garnet</h3>
@@ -79,7 +79,7 @@ export default function HomePage() {
 
             {/* Card 3 */}
             <Link href="/minerals/bentonite" className="flex-shrink-0 w-72 h-[350px] md:h-[400px] rounded-3xl bg-gray-800 overflow-hidden snap-start relative group shadow-2xl">
-              <img src="/Bentonite.jpg" alt="Bentonite" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <img src="/Bentonite2.jpg" alt="Bentonite" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
               <div className="absolute bottom-6 left-6">
                 <h3 className="text-white font-bold text-2xl mb-1">Bentonite</h3>

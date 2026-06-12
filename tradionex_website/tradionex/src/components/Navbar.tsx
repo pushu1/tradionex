@@ -108,6 +108,10 @@ export default function Navbar() {
               </div>
             </div>
 
+
+            <Link href="/gallery" className={`inline-flex items-center text-[15px] font-semibold tracking-wide transition-colors ${textClass}`}>
+              Gallery
+            </Link>
             <Link href="/application" className={`inline-flex items-center text-[15px] font-semibold tracking-wide transition-colors ${textClass}`}>
               Application
             </Link>
@@ -208,6 +212,14 @@ export default function Navbar() {
                   <Link href="/products/non-basmati-rice">Non-Basmati Rice</Link>
                 </div>
               )}
+
+                <Link
+                href="/gallery"
+                className="px-6 py-3 text-[#241c66] hover:text-[#fa7719] font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Gallery
+              </Link>
 
               <Link
                 href="/application"

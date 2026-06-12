@@ -20,6 +20,7 @@ export const mineralsData = [
     tagline: "Hydrous aluminum silicate for advanced industrial applications.",
     description: "Garnet is a natural, high-density mineral abrasive widely used in industrial applications requiring precision cutting and surface preparation. It is one of the most efficient and cost-effective abrasives for sandblasting and waterjet cutting, offering high hardness, low dust generation, and consistent performance. Our garnet is carefully processed to ensure uniform particle size distribution, high purity, and stable quality standards suitable for industrial use worldwide.",
     imageUrl: "/NaturalGarnet.jpg",
+    heroImage: "/Blastinggarnet.jpg",
     sidebarTitle: "AVERAGE CHEMICAL COMPOSITION (Typical)",
     applications: ["8/16 (Heavy industrial / water filtration / blasting)", "12/20 (Water well drilling / surface prep)", "20/40 (Standard sandblasting grade)", "30/60 (Fine blasting / surface finishing)", "80 mesh (Special applications / fine cutting)"],
     qualityIndex: [

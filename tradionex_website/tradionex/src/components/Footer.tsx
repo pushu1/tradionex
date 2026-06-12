@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 
+import {
+  FaLinkedinIn,
+  FaXTwitter,
+  FaInstagram,
+  FaFacebookF,
+} from "react-icons/fa6";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-16 border-t border-gray-800">
@@ -49,17 +56,60 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-blue-500 flex-shrink-0" />
-                <span className="hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">Dubai Silicon Oasis, <br /> Dubai, United Arab Emirates</span>
+                <span className="hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">Office No. 903 Dusseldorf Business Point, Al Barsha 1 Dubai</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-blue-500 flex-shrink-0" />
-                <span className="hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">+971 50 123 4567</span>
+                <span className="hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">+9715 680 39829</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-blue-500 flex-shrink-0" />
-                <span className="hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">export@tradionex.com</span>
+                <span className="hover:text-[#fa7719] transition-colors duration-300 cursor-pointer">sales@tradionex.com</span>
               </li>
             </ul>
+
+            <div className="mt-6">
+  <div className="flex gap-3">
+
+    <a
+      href="https://www.instagram.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-11 h-11 flex items-center justify-center rounded-lg bg-gray-800 text-white hover:bg-[#fa7719] transition-all duration-300"
+    >
+      <FaInstagram size={20} />
+    </a>
+
+    <a
+      href="https://www.facebook.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-11 h-11 flex items-center justify-center rounded-lg bg-gray-800 text-white hover:bg-[#fa7719] transition-all duration-300"
+    >
+      <FaFacebookF size={20} />
+    </a>
+
+    <a
+      href="https://x.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-11 h-11 flex items-center justify-center rounded-lg bg-gray-800 text-white hover:bg-[#fa7719] transition-all duration-300"
+    >
+      <FaXTwitter size={20} />
+    </a>
+
+    <a
+      href="https://www.linkedin.com/company/tradionex-fze/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-11 h-11 flex items-center justify-center rounded-lg bg-gray-800 text-white hover:bg-[#fa7719] transition-all duration-300"
+    >
+      <FaLinkedinIn size={20} />
+    </a>
+
+  </div>
+</div>
+
           </div>
 
         </div>

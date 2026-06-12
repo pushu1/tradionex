@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,22 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar />
+
           <main className="flex-1">{children}</main>
+
+          <a
+            href="https://wa.me/971568039829"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="fixed bottom-6 right-6 z-50"
+          >
+            <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-[#fa7719] hover:scale-110 transition-all duration-300">
+              <div className="text-white text-3xl">
+                <FaWhatsapp />
+              </div>
+            </div>
+          </a>
+
           <Footer />
         </ThemeProvider>
       </body>

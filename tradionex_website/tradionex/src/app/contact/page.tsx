@@ -50,21 +50,21 @@ export default function ContactPage() {
                   <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl mr-4"><MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" /></div>
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Location</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">Dubai Silicon Oasis,<br/>Dubai, United Arab Emirates</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">Office No. 903 Dusseldorf Business Point, Al Barsha 1 Dubai</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl mr-4"><Phone className="w-6 h-6 text-blue-600 dark:text-blue-400" /></div>
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Phone</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">+971 50 123 4567<br/>Mon-Fri, 9am to 6pm GST</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">+9715 680 39829<br/>Mon-Fri, 9am to 6pm GST</p>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl mr-4"><Mail className="w-6 h-6 text-blue-600 dark:text-blue-400" /></div>
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Email</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">export@tradionex.com<br/>sales@tradionex.com</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">sales@tradionex.com</p>
                   </div>
                 </li>
               </ul>

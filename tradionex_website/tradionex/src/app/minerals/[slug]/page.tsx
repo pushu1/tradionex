@@ -26,7 +26,7 @@ export default async function MineralPage({ params }: { params: Promise<{ slug: 
         <div className="absolute inset-0 bg-gray-900 z-0"></div>
         <div
           className="absolute inset-0 z-10 opacity-40 bg-cover bg-center"
-          style={{ backgroundImage: `url(${mineral.imageUrl})` }}
+          style={{ backgroundImage: `url(${mineral.heroImage || mineral.imageUrl})` }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-black/30 z-20"></div>
 
@@ -40,6 +40,7 @@ export default async function MineralPage({ params }: { params: Promise<{ slug: 
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">{mineral.name}</h1>
           <p className="text-xl text-gray-200 font-light max-w-2xl mx-auto drop-shadow-md">{mineral.tagline}</p>
+          
         </div>
       </section>
 
