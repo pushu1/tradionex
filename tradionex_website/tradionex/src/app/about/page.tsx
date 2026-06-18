@@ -67,6 +67,110 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+
+      <section className="py-24">
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Section Heading */}
+
+          <div className="text-center mb-20">
+
+            <h2 className="text-4xl md:text-5xl font-bold text-[#241c66] mb-4">
+              Our Strategic Business Partners
+            </h2>
+
+            <p className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+              Strong partnerships enable us to expand globally and provide comprehensive business solutions across multiple industries.
+            </p>
+
+          </div>
+
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+            {/* Left Side Image */}
+
+            <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+
+              <Image
+                src="/professional.jpg"
+                alt="Axis Zone UAE"
+                fill
+                className="object-cover"
+              />
+
+              {/* Logo */}
+
+              <div className="absolute bottom-5 right-5 bg-white p-2 rounded-xl shadow-lg">
+
+                <Image
+                  src="/axiszonelogo.png"
+                  alt="Axis Zone Logo"
+                  width={85}
+                  height={85}
+                  className="object-contain"
+                />
+
+              </div>
+
+            </div>
+
+
+            {/* Right Side Content */}
+
+            <div>
+
+              <h3 className="text-4xl font-bold text-[#241c66] mb-6">
+
+                Axis Zone – Your Gateway to UAE Business Growth
+
+              </h3>
+
+              <p className="text-gray-600 mb-10 leading-relaxed text-lg">
+
+                Axis Zone is our trusted strategic partner in the UAE, helping entrepreneurs, startups, and international businesses establish and expand their presence in the region. Through expert guidance in company formation, licensing, corporate taxation, banking support, and compliance services, Axis Zone simplifies the business setup journey and enables sustainable growth.
+
+              </p>
+
+
+              <div className="space-y-4">
+
+                {[
+                  "UAE Company Formation & Licensing",
+                  "Corporate Tax Registration",
+                  "Residency Visa Assistance",
+                  "Corporate Banking Support",
+                  "Business Compliance Services",
+                  "End-to-End Business Advisory",
+                ].map((service, idx) => (
+
+                  <div key={idx} className="flex items-center">
+
+                    <CheckCircle2 className="w-6 h-6 text-[#241c66] mr-4 flex-shrink-0" />
+
+                    <span className="text-gray-800 font-medium">
+
+                      {service}
+
+                    </span>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
     </div>
   );
 }
