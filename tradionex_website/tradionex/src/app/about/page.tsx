@@ -78,11 +78,11 @@ export default function AboutPage() {
           <div className="text-center mb-20">
 
             <h2 className="text-4xl md:text-5xl font-bold text-[#241c66] mb-4">
-              Our Strategic Business Partners
+              Our Group Companies
             </h2>
 
             <p className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
-              Strong partnerships enable us to expand globally and provide comprehensive business solutions across multiple industries.
+              A diversified business group serving global industries through mining, minerals, international trade, and business solutions.
             </p>
 
           </div>
