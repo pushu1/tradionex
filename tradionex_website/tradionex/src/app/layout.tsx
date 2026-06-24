@@ -19,7 +19,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Tradionex | B2B Corporate Export",
-  description: "Global excellence in industrial minerals and agricultural export.",
+
+  description:
+    "Global excellence in industrial minerals and agricultural export.",
+
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
