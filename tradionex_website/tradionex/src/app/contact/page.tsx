@@ -64,12 +64,69 @@ export default function ContactPage() {
                   <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl mr-4"><Mail className="w-6 h-6 text-blue-600 dark:text-blue-400" /></div>
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Email</p>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">sales@tradionex.com</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">tradionex@gmail.com</p>
                   </div>
                 </li>
               </ul>
             </div>
+
+
+{/* India Office */}
+<div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
+  <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+    India Office
+  </h3>
+
+  <ul className="space-y-6">
+    <li className="flex items-start">
+      <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl mr-4">
+        <MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+      </div>
+      <div>
+        <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
+          Location
+        </p>
+        <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          Plot No. 11, Chopasni Road, Near Sutha Chungi Chowki,
+          Jodhpur, Rajasthan 342008, India
+        </p>
+      </div>
+    </li>
+
+    <li className="flex items-start">
+      <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl mr-4">
+        <Phone className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+      </div>
+      <div>
+        <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
+          Phone
+        </p>
+        <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          +91 9828032280
+          <br />
+          +91 6350351197
+        </p>
+      </div>
+    </li>
+
+    <li className="flex items-start">
+      <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-xl mr-4">
+        <Mail className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+      </div>
+      <div>
+        <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
+          Email
+        </p>
+        <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          Jbenterprises28@gmail.com
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+
           </div>
+          
 
           {/* Form */}
           <div className="lg:col-span-8">

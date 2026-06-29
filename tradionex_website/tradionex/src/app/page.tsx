@@ -39,15 +39,16 @@ export default function HomePage() {
         </div> */}
 
         {/* Content Overlay */}
-        <div className="relative z-20 w-full pl-4 sm:pl-6 lg:pl-16 flex flex-col md:flex-row items-end justify-between gap-12">
+        <div className="relative z-20 w-full pl-4 sm:pl-6 lg:pl-16 flex flex-col md:flex-row items-center justify-between gap-12">
 
           {/* Left Text Box */}
           <div className="w-full md:w-1/3 pr-4 md:pr-0 mb-8 md:mb-0">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              The World <br /> Of Excellence
+              From Mine To <br />
+              <span className="whitespace-nowrap">Global Markets</span>
             </h2>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-sm">
-              Unlock the perfect industrial experience by exploring a diverse selection of premium export materials.
+              Supplying premium Garnet Abrasive and Industrial Minerals to industries worldwide since 2016
             </p>
           </div>
 

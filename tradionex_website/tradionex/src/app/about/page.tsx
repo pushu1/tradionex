@@ -182,11 +182,98 @@ export default function AboutPage() {
               <div>
 
                 <h3 className="text-4xl font-bold text-[#241c66] mb-6">
+                  JB Enterprises – Premium Garnet Mining & Processing Experts
+                </h3>
+
+                <p className="text-gray-600 mb-10 leading-relaxed text-lg">
+                  JB Enterprises is our specialized garnet division in India, engaged in the mining, processing, and supply of premium-quality garnet abrasives. With our strong focus on quality, consistency, and customer satisfaction, we serve industries including surface preparation, sandblasting, waterjet cutting, shipbuilding, oil & gas, and infrastructure projects worldwide.
+                  <br />
+                  We are committed to delivering high-performance garnet abrasive solutions that meet international standards while ensuring reliable supply, competitive pricing, and outstanding customer support for our global partners.
+                </p>
+
+                <div className="space-y-4">
+
+                  {[
+                    "Garnet Mine Owner & Processor",
+                    "Garnet Abrasive Manufacturer & Exporter",
+                    "Sandblasting & Waterjet Garnet",
+                    "20/40, 30/60, 80 & 120 Mesh Grades",
+                    "Surface Preparation Solutions",
+                    "Oil & Gas Blasting Applications",
+                    "Shipyard & Marine Maintenance Abrasives",
+                    "Quality-Assured Processing",
+                    "Global Supply Chain Support",
+                  ].map((service, idx) => (
+
+                    <div key={idx} className="flex items-center">
+
+                      <CheckCircle2 className="w-6 h-6 text-[#241c66] mr-4 flex-shrink-0" />
+
+                      <span className="text-gray-800 font-medium">
+                        {service}
+                      </span>
+
+                    </div>
+
+                  ))}
+
+                </div>
+
+              </div>
+
+              {/* Right Image */}
+
+              <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+
+                <Image
+                  src="/JB.jpeg"
+                  alt="JB"
+                  fill
+                  className="object-cover"
+                />
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        {/* Group Company 3 */}
+
+        <div className="mt-24">
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+              {/* Left Image */}
+
+              <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+
+                <Image
+                  src="/Starenterprises.png"
+                  alt="Starenterprises"
+                  fill
+                  className="object-cover"
+                />
+
+              </div>
+
+              {/* Right Content */}
+
+              <div>
+
+                <h3 className="text-4xl font-bold text-[#241c66] mb-6">
                   Star Enterprises – Trusted Global Export Partner
                 </h3>
 
                 <p className="text-gray-600 mb-10 leading-relaxed text-lg">
                   Star Enterprises is a valued member of our group, specializing in the supply of industrial minerals for industries such as oil & gas, drilling, ceramics, construction, foundry, and manufacturing. Our product portfolio includes bentonite, china clay, feldspar, and other industrial raw materials sourced from trusted suppliers across India.
+                  <br />
                   <br />
                   In addition to our core minerals business, Star Enterprises also supplies natural stones, rice, spices, and selected agricultural products to customers across global markets, supported by reliable sourcing, quality assurance, and efficient logistics solutions.
                 </p>
@@ -194,6 +281,7 @@ export default function AboutPage() {
                 <div className="space-y-4">
 
                   {[
+                    "Key Products & Capabilities",
                     "Industrial Minerals Raw Materials",
                     "Bentonite for Drilling & Energy Industries",
                     "China Clay (Kaolin) & Feldspar Supply",
@@ -219,19 +307,6 @@ export default function AboutPage() {
 
               </div>
 
-              {/* Right Image */}
-
-              <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-lg border border-gray-200">
-
-                <Image
-                  src="/Starenterprises.png"
-                  alt="Star Enterprises"
-                  fill
-                  className="object-cover"
-                />
-
-              </div>
-
             </div>
 
           </div>
@@ -240,90 +315,8 @@ export default function AboutPage() {
 
 
 
-{/* Group Company 3 */}
-
-<div className="mt-24">
-
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-
-      {/* Left Image */}
-
-      <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-lg border border-gray-200">
-
-        <Image
-          src="/JB.jpeg"
-          alt="JB Enterprises"
-          fill
-          className="object-cover"
-        />
-
-      </div>
-
-      {/* Right Content */}
-
-      <div>
-
-        <h3 className="text-4xl font-bold text-[#241c66] mb-6">
-          JB Enterprises – Premium Garnet Mining & Processing Experts
-        </h3>
-
-        <p className="text-gray-600 mb-10 leading-relaxed text-lg">
-          JB Enterprises is our specialized garnet division in India,
-          engaged in the mining, processing, and supply of premium-quality
-          garnet abrasives. With our strong focus on quality, consistency,
-          and customer satisfaction, we serve industries including surface
-          preparation, sandblasting, waterjet cutting, shipbuilding,
-          oil & gas, and infrastructure projects worldwide.
-          <br />
-          <br />
-          We are committed to delivering high-performance garnet abrasive
-          solutions that meet international standards while ensuring
-          reliable supply, competitive pricing, and outstanding customer
-          support for our global partners.
-        </p>
-
-        <div className="space-y-4">
-
-          {[
-            "Garnet Mine Owner & Processor",
-            "Garnet Abrasive Manufacturer & Exporter",
-            "Sandblasting & Waterjet Garnet",
-            "20/40, 30/60, 80 & 120 Mesh Grades",
-            "Surface Preparation Solutions",
-            "Oil & Gas Blasting Applications",
-            "Shipyard & Marine Maintenance Abrasives",
-            "Quality-Assured Processing",
-            "Global Supply Chain Support",
-          ].map((service, idx) => (
-
-            <div key={idx} className="flex items-center">
-
-              <CheckCircle2 className="w-6 h-6 text-[#241c66] mr-4 flex-shrink-0" />
-
-              <span className="text-gray-800 font-medium">
-                {service}
-              </span>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
       </section>
-      
+
     </div>
   );
 }
